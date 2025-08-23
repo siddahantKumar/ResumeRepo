@@ -1,0 +1,202 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Senior .NET Developer | Microsoft Solutions Specialist}
+\end{center}
+
+Experienced .NET Developer with 3+ years delivering high-quality Microsoft technology solutions in FinTech and LegalTech sectors. Proven track record of meeting project deadlines and budgets while maintaining exceptional quality standards. Expert in Azure cloud services, C\#.NET, ASP.NET Core, and modern web technologies. Strong technical analysis skills with ability to capture requirements accurately and present complex solutions to non-technical stakeholders. Collaborative team player with experience in Agile methodologies and mentoring junior developers.
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\noindent
+- \textbf{Microsoft Technologies:} C\#, .NET Core, ASP.NET Core, .NET 8, ASP.NET MVC, Entity Framework 8, WCF, WebAPI (REST/SOAP), SQL Server, Reporting Services, JavaScript, LINQ, SOLID Principles \\
+- \textbf{Azure Cloud Services:} Azure Functions, Service Bus, App Services, Key Vault, Blob Storage, Redis Cache, Azure DevOps, CI/CD Pipelines \\
+- \textbf{Quality \& Testing:} Unit Testing, Integration Testing, Code Review, Test-Driven Development, Selenium, Swagger, Postman \\
+- \textbf{Project Management:} Agile/Scrum, Waterfall, Sprint Planning, Technical Analysis, Requirements Gathering, Client Communication \\
+- \textbf{Additional Technologies:} Angular 16, React, PHP, Flutter, AWS (EC2, Lambda), Oracle, MySQL, PostgreSQL, MongoDB, Power BI
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Led technical analysis and requirements gathering for SOA-based Etisalat Payment Gateway, delivering high-quality software within time and budget constraints while ensuring 99.9\% transaction success rates.
+    \item Implemented comprehensive unit testing strategy achieving 85\% code coverage, reducing production bugs by 50\% and enhancing system reliability for Gulf merchants.
+    \item Collaborated with cross-functional teams to integrate EMV 3-D Secure 2.0 and mobile payment solutions, improving approval rates by 20\% through proactive issue identification and resolution.
+    \item Mentored junior developers on design patterns and best practices, conducting regular code reviews to maintain quality standards and knowledge sharing within the team.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Architected and delivered multi-tenant SaaS ERP solution on Azure, demonstrating strong technical analysis skills and ability to meet client business requirements while reducing authorization errors by 80\%.
+    \item Led development of 5 ERP modules using Agile methodology, completing project 2 months ahead of schedule through effective time management and proactive task ownership.
+    \item Implemented comprehensive testing strategy including unit, integration, and user acceptance testing, ensuring first-time high-quality deliverables into production environments.
+    \item Collaborated with clients and stakeholders to capture requirements accurately, presenting technical solutions to non-technical audiences and maintaining regular communication updates.
+    \item Automated business workflows using Azure Functions and Power BI integration, improving operational efficiency by 30\% and supporting data-driven decision making.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Developed VISA PRA Mandate APIs with focus on quality and attention to detail, improving transaction speed and accuracy while adding estimated \$50,000 annual revenue.
+    \item Delivered EKPCMS for HBL using .NET and C++, reducing call handling time by 30\% through technical analysis and optimization of core business logic.
+    \item Optimized payment gateway integrations with comprehensive unit testing, boosting success rates by 30\% and ensuring consistent delivery of quality work.
+    \item Implemented database optimization strategies including hash indexing, reducing data retrieval time by 25\% and improving overall system performance.
+\end{resume_list}
+
+\headingBf{Kahoo Digitals}{May 2020 -- Jun 2021}
+\headingIt{Associate Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Built and optimized REST APIs with emphasis on quality and performance, reducing response times by 20\% and page load by 2 seconds.
+    \item Increased bug detection rates by 40\% through systematic testing approach and early engagement with quality assurance processes.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets - Demonstrated technical analysis and research capabilities
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform - Showcased full-stack development and UX/UI design concepts
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{AI Summarization Tool (MSc Dissertation):} Developed NLP pipeline for political tweet summarization using Azure Cognitive Services, demonstrating cloud service integration and technical analysis skills.
+    \item \textbf{De Rouze ERP SaaS:} Architected multi-tenant ERP with Azure Functions and Power BI integration, showcasing enterprise software architecture design and cloud service expertise.
+    \item \textbf{Payment Gateway Security Module:} Implemented encryption and 3-D Secure 2.0 with comprehensive testing strategy, achieving PCI compliance and reducing fraud risk through quality-focused development.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+    \item Microsoft Azure Fundamentals (AZ-900) - In Progress
+    \item Microsoft .NET Developer Certification - Planned within 12 months
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
