@@ -1,0 +1,201 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Full-Stack .NET Developer | Software Engineer}
+\end{center}
+
+Full-Stack .NET Developer with 3+ years of experience delivering secure, scalable FinTech, LegalTech, and ERP solutions. Expert in C\#, .NET Core, REST APIs, Azure, and microservices architecture. Proven record of reducing deployment times by 40\% and achieving 99.9\% transaction success rates. Skilled in payment gateways, cloud automation, and CI/CD pipelines.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\noindent
+- \textbf{Programming \& Frameworks:} C\#, .NET Core, ASP.NET Core, .NET 8, Angular 16, Tailwind CSS, BootStrap4, RESTful APIs, Microservices, WCF, JavaScript, Python, Entity Framework 8, ASP.NET MVC, Dapper, ADO.NET, Clean Architecture, WebAPI (REST/SOAP), Multithreading, LINQ, SOLID Principles \\
+- \textbf{Cloud \& DevOps:} Microsoft Azure (Functions, Service Bus, App Services, Key Vault, Blob Storage, Redis Cache), Azure DevOps, AWS (EC2, Lambda), CI/CD Pipelines \\
+- \textbf{Databases:} Oracle, SQL Server, MySQL, PostgreSQL, MongoDB \\
+- \textbf{Tools \& Technologies:} Git, Bitbucket, Power BI, SOAP/REST, RabbitMQ, ISO-8583 Messaging \\
+- \textbf{Testing \& Automation:} Selenium, SoapUI, Unit Testing, Swagger, JWT, Postman, Automated Workflows
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Implemented transaction validation and encryption modules in the SOA-based Etisalat Payment Gateway using C\#, enhancing security and reducing processing errors by 50\% for Gulf merchants.
+    \item Achieved 99.9\% transaction success by ensuring full compliance with VISA, MasterCard, and AMEX standards through scenario-based testing using provider-issued test cards.
+    \item Integrated EMV 3-D Secure 2.0, Apple Pay, Samsung Pay, and TAP, improving approval rates by 20 percent and user adoption by 35 percent.
+    \item Streamlined Oracle operations and Bitbucket workflows, improving deployment efficiency by 25 percent.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Delivered multi-tenant SaaS ERP on Azure, reducing authorization errors by 80 percent and improving uptime.
+    \item Led development of 5 ERP modules, completing the project 2 months early.
+    \item Automated invoicing with Generative AI APIs and Power BI dashboards, boosting billing accuracy and speeding decision-making by 20 percent.
+    \item Automated New Business Intake and Billing workflows for WithersWorldWide, reducing approval time by 30 percent.
+    \item Delivered Elite 3E customizations for Helm360, improving law firm workflows.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Developed VISA PRA Mandate APIs, improving transaction speed and accuracy, adding an estimated \$50,000 annual revenue.
+    \item Delivered EKPCMS for HBL using .NET and C++, reducing call handling time by 30 percent.
+    \item Optimized VISA and MasterCard integrations, boosting success rates by 30 percent.
+    \item Improved query performance with hash indexing, reducing data retrieval time by 25 percent.
+\end{resume_list}
+
+\headingBf{Kahoo Digitals}{May 2020 -- Jun 2021}
+\headingIt{Associate Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Built and optimized REST APIs, reducing response times by 20 percent and page load by 2 seconds.
+    \item Increased bug detection rates by 40 percent via Postman testing.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{AI Summarization Tool (MSc Dissertation):} Developed an NLP pipeline for political tweet summarization, improving social media insights.
+    \item \textbf{De Rouze ERP SaaS:} Architected multi-tenant ERP with Azure Functions and Power BI integration for US auto dealers.
+    \item \textbf{Payment Gateway Security Module:} Implemented encryption and 3-D Secure 2.0, achieving PCI compliance and reducing fraud risk.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
