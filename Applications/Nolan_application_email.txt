@@ -1,0 +1,37 @@
+Subject: Application for Senior Software Developer Position - Siddahant Kumar
+
+Dear Hiring Manager,
+
+I hope this email finds you well. I am writing to express my strong interest in the Senior Software Developer position within Nolan Business Solutions' Microsoft development team.
+
+As a Senior Full-Stack .NET Developer with 3+ years of experience delivering secure, scalable ERP systems and cloud platforms, I am excited about the opportunity to contribute to the UK's only NetSuite and Business Central Partner.
+
+Key highlights of my experience that align with your requirements:
+
+• Strong C# and .NET expertise with proven experience in project leadership and delivery
+• Extensive experience with multi-tenant SaaS ERP systems, having led full-stack development across 5 ERP modules and completed projects 2 months ahead of schedule
+• Comprehensive background in requirements gathering, stakeholder analysis, and producing functional specifications and technical designs
+• Technical mentoring experience, having provided guidance to junior and mid-level developers to elevate team capability
+• Strong SQL Server integration and optimization experience, improving data retrieval times by 25%
+• Full-stack web development skills including JavaScript, TypeScript, and Angular
+• Microsoft Azure platform experience with Functions, Service Bus, and App Services
+• Power Platform knowledge including Power BI and Power Automate
+• Agile development experience with sprint planning, daily stand-ups, and retrospectives
+• Proven problem-solving abilities and commitment to code quality through best practices and code reviews
+
+I am particularly drawn to Nolan's position as the UK's leading ERP adviser with 1,300+ active customers and your focus on Microsoft Dynamics 365 Business Central. My experience with scalable, maintainable ERP solutions aligns perfectly with your mission to deliver high-quality solutions across small to large-scale projects.
+
+I am based in England, UK, and am fully committed to the hybrid working arrangement at your Fleet, Hampshire office. I am available for an interview at your convenience and would welcome the opportunity to discuss how my technical expertise and project leadership experience can contribute to Nolan's continued success.
+
+Please find my CV attached for your review. I look forward to hearing from you.
+
+Thank you for your time and consideration.
+
+Best regards,
+
+Siddahant Kumar
+Email: sidhantlohana@outlook.com
+Phone: +44 7827 848363
+LinkedIn: linkedin.com/in/siddahantkumar
+GitHub: github.com/siddahantKumar
+Location: England, UK
