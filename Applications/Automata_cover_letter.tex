@@ -1,0 +1,142 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Staff Software Engineer - Automata}
+\end{center}
+
+\vspace{10pt}
+
+Dear Automata Hiring Team,
+
+I'm excited to apply for the Staff Software Engineer position. Your mission to transform how scientists work through lab automation really resonates with me—it's exactly the kind of meaningful work where I can make a real impact while solving complex technical challenges.
+
+\textbf{Why this role excites me:}
+
+I've spent 3+ years architecting robust Windows-based integration solutions and leading technical teams. What draws me to this role is the opportunity to bridge modern automation platforms with laboratory instruments—it's the perfect blend of my deep C\# and .NET expertise with the chance to empower scientists through technology.
+
+I thrive in environments where traditional approaches don't work and creative problem-solving is essential. Your need for someone who can handle legacy .NET framework compatibility while building scalable, event-driven architectures is exactly where I excel. I love the challenge of making complex systems work seamlessly together.
+
+\vspace{10pt}
+
+\textbf{What I bring to Automata:}
+
+\textbf{Technical Leadership:} I've led teams in architecting multi-tenant SaaS platforms and payment gateways, always with a focus on mentoring developers and establishing technical standards. I understand that being a Staff Engineer means being a force multiplier for the entire team.
+
+\textbf{Windows Platform Mastery:} My experience spans .NET Framework to .NET 8, with deep expertise in Windows services, legacy system integration, and enterprise patterns. I've successfully migrated applications across framework versions while maintaining backwards compatibility.
+
+\textbf{Enterprise Integration:} I've architected event-driven systems using RabbitMQ, implemented message queues, and built resilient APIs that handle complex workflows. I understand the challenges of integrating diverse systems and making them work reliably at scale.
+
+\textbf{Problem-Solving Mindset:} I'm comfortable with ambiguity and rapid innovation. Whether it's optimizing payment processing systems or building ERP platforms, I approach each challenge by understanding the core problem and finding elegant solutions.
+
+\vspace{10pt}
+
+I'm genuinely excited about the possibility of contributing to Automata's mission. The idea of helping scientists focus on groundbreaking research while we handle the complex integration challenges is incredibly motivating.
+
+Thanks for considering my application. I'd love to discuss how I can help Automata continue to transform lab automation.
+
+Best regards,
+
+Siddahant Kumar
+
+\end{document}

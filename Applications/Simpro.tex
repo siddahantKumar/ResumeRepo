@@ -1,0 +1,213 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Software Engineer | Full-Stack Developer}
+\end{center}
+
+Software Engineer with 3+ years of experience designing and building modular, testable applications using C\#, .NET, React, and TypeScript. Skilled in developing responsive front-end components, implementing clean RESTful APIs, and working with SQL databases including MSSQL and PostgreSQL. Experienced in TDD, unit testing, and automated test frameworks within agile environments. Passionate about delivering high-quality, scalable solutions that help field service professionals work more efficiently and effectively.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{Programming \& Frameworks:} C\#, .NET Core, .NET 8, ASP.NET Core, React, TypeScript, JavaScript, Angular, RESTful APIs, Microservices, Entity Framework 8, ASP.NET MVC, Dapper, ADO.NET, Clean Architecture, Modular Application Design, WebAPI, Multithreading, LINQ, SOLID Principles
+    \item \textbf{Cloud \& DevOps:} Microsoft Azure (Functions, Service Bus, App Services, Key Vault, Blob Storage, Redis Cache), Azure DevOps, AWS (EC2, Lambda), CI/CD Pipelines, Containers
+    \item \textbf{Databases:} Microsoft SQL Server, PostgreSQL, Oracle, MySQL, MongoDB (NoSQL), Database Optimization, Data-Driven Features
+    \item \textbf{Tools \& Technologies:} Git, Visual Studio, Azure DevOps, SOAP/REST, RabbitMQ, Agile/Scrum, Peer Code Reviews, Architectural Planning, Field Service Management
+    \item \textbf{Testing \& Automation:} Unit Testing, Integration Testing, TDD, xUnit, NUnit, MSTest, Selenium, SoapUI, Swagger, JWT, Postman, Automated Workflows
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Designed and built modular, testable transaction validation and encryption modules for the Etisalat Payment Gateway using \textbf{C\#} and \textbf{.NET Core}, applying TDD principles and clean architecture to deliver high-quality, scalable solutions that reduced processing errors by 40\% for Gulf merchants.
+    \item Improved transaction success rates by 90\% by conducting scenario-based testing with VISA, MasterCard, and AMEX provider-issued test cards and automating regression testing with \textbf{Azure DevOps} pipelines.
+    \item Designed and optimized scalable REST APIs (WalletRegistration, WalletCreateSession) by consolidating redundant flows and applying \textbf{clean architecture} patterns in \textbf{.NET Web APIs}, improving maintainability and throughput.
+    \item Integrated EMV® 3-D Secure 2.0, Apple Pay, Samsung Pay, and TAP, increasing payment approval rates by 20\% and expanding user adoption by 35\%.
+    \item Streamlined Oracle/PostgreSQL operations by tuning queries and implementing automated backup routines with \textbf{Azure Functions} and \textbf{Stored Procedures}, improving deployment reliability by 20\%.
+    \item Identified and resolved performance bottlenecks via \textbf{EF Core} query tuning and selective use of \textbf{Dapper}, reducing API latency and improving scalability across clients.
+    \item Wrote and maintained \textbf{unit and integration tests} (xUnit) for critical payment flows, increasing deployment confidence and enabling faster CI/CD releases.
+    \item Delivered fixes for merchant payment pages (refund handling across multiple MIDs, BNPL menu validation, localized payment pages) using \textbf{.NET Core} and \textbf{Angular}.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Designed and built modular, testable multi-tenant SaaS ERP for US Auto Dealers using \textbf{C\#}, \textbf{.NET Core microservices}, and \textbf{RESTful APIs}, implementing TDD and clean architecture principles to deliver scalable field service management solutions that reduced authorization errors by 80\%.
+    \item Developed responsive front-end components and intuitive UIs for ERP modules (Accounting, Inventory, HR, Invoicing, Smart Reporting) using \textbf{Angular} and \textbf{TypeScript}, working with \textbf{SQL Server} to build data-driven features that streamlined operations and improved reliability by 30\%.
+    \item Integrated \textbf{Generative AI} APIs to automate invoice creation, improving billing accuracy and accelerating decision-making by 20\%.
+    \item Implemented inter-service communication by integrating \textbf{RabbitMQ} with \textbf{Mass Transit}, scaling throughput and resilience.
+    \item Implemented hybrid deployment options by configuring Azure App Services for \textbf{cloud} and \textbf{Kestrel} for on-premises hosting, lowering infrastructure costs by 25\% for clients with legacy systems.
+    \item Practiced \textbf{TDD} for core services and added \textbf{unit/integration tests} (xUnit/MSTest), increasing test coverage and shortening feedback cycles.
+    \item Collaborated in an \textbf{agile squad} with product/design to plan, build, and retrospect features, contributing to continuous improvement and delivery.
+    \item Automated reporting with embedded \textbf{Power BI} dashboards, boosting client visibility and operational insights.   
+    \item Designed and enforced role-based approval workflows for multi-tenant deployments through \textbf{Azure B2C} role management, reducing compliance gaps and cutting approval delays by 35\%.
+    \item Delivered Elite 3E customizations for Helm360 using an in-house IDE, improving law firm workflows and user adoption.
+    \item Automated New Business Intake and Billing workflows for WithersWorldWide using VBS within an internal IDE, reducing approval time by 30\% and accelerating client onboarding speed.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Revamped EKPCMS Phase 1 for HBL by developing complaint workflows in \textbf{C++} and exposing \textbf{C\#} web services with \textbf{WSDLs} to Unison CRM, enabling secure complaint logging and synchronization through Rendezvous middleware, which improved response accuracy by 25\%.
+    \item Delivered VISA PRA Mandate for Sri Lanka by integrating Rendezvous middleware with VISA and RBTS (Bank Host) and routing reversals to Vision \textbf{Card Management System}, allowing cardholders to track pending transactions in real time.
+    \item Expanded EKPCMS Phase 2 by implementing 16 additional complaint types using \textbf{SOAP-based XML} architecture, ensuring both CRM and EKPCMS channels were synchronized, which improved customer service efficiency by 30\%.
+    \item Used \textbf{SOAP UI} to test and validate web services and added integration tests for key workflows, minimizing deployment defects.
+    \item Optimized query performance with hash indexing on Unison-Attributes, cutting data retrieval time by 25\% and boosting system efficiency.
+\end{resume_list}
+
+\headingBf{Kahoo Digitals}{May 2020 -- Jun 2021}
+\headingIt{Associate Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Designed and implemented clean \textbf{RESTful APIs} using \textbf{C\#} and \textbf{.NET Core}, applying modular application design principles and TDD to deliver testable, scalable backend services that improved response times by up to 20\% through SQL query optimization.
+    \item Validated API performance and reliability by conducting thorough \textbf{Postman} testing, increasing bug detection rates by 40\%.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{MyNewsDigest (React, Flask, Python, MySQL, BART, NLP):} Developed a novel system for summarizing political tweets using modern NLP techniques. Designed a scalable and efficient pipeline that collects, cleans, and preprocesses Twitter data, performs topic modeling with TF-IDF and LDA, and generates summaries with BART. Improved accessibility of trending political insights through a user-friendly React frontend.
+    \item \textbf{DeRouze Saad ERP for US Auto Dealers (.NET Core, Angular, TypeScript, SQL Server, Azure): } Designed and built modular, testable multi-tenant SaaS ERP platform with responsive front-end components and intuitive UIs. Developed modules for Accounting, Inventory, HR, Invoicing, and Smart Reporting using \textbf{C\#}, \textbf{RESTful APIs}, and \textbf{SQL Server} to build data-driven features, reducing errors by 80\% and improving operational efficiency by 30\%.
+    \item \textbf{EKPCMS for HBL Bank (C++, C\#, .NET, WSDL, SOAP UI):} Led a two-phase revamp of EKPCMS, migrating to SOAP-based XML communications via Financial Middleware (Rendezvous) between SBP and HBL CRM. Implemented 24 complaint handling workflows synchronized across multiple channels, enhancing response efficiency and system reliability.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
