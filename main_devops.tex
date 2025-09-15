@@ -1,0 +1,214 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{DevOps Engineer | Cloud Infrastructure Specialist}
+\end{center}
+
+DevOps Engineer with 3+ years of experience designing and building scalable cloud infrastructure, implementing CI/CD pipelines, and managing containerized microservices architectures. Skilled in \textbf{Docker/Kubernetes}, \textbf{Azure/GCP/AWS}, \textbf{Terraform/Ansible}, and \textbf{Jenkins/GitHub Actions}. Experienced in \textbf{infrastructure automation}, \textbf{monitoring and observability}, and \textbf{security best practices}. Passionate about reducing toil, improving platform availability, and enabling high-quality software delivery through DevOps practices.
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{Containerization \& Orchestration:} Docker, Kubernetes, Istio, Container Security, Microservices Architecture, Service Mesh, Pod Management, Helm Charts
+    \item \textbf{Cloud Platforms:} Microsoft Azure (App Services, Functions, Key Vault, Blob Storage, Redis Cache), Google Cloud Platform (GCP), AWS (EC2, Lambda, S3), Multi-cloud Architecture
+    \item \textbf{Infrastructure as Code:} Terraform, Ansible, Packer, Configuration Management, Infrastructure Automation, State Management
+    \item \textbf{CI/CD \& DevOps Tools:} Jenkins, GitHub Actions, ArgoCD, GitOps, Automated Testing, Build Pipelines, Release Engineering
+    \item \textbf{Monitoring \& Observability:} Prometheus, Grafana, Alertmanager, Fluentd, Log Aggregation, Metrics Collection, Performance Monitoring
+    \item \textbf{Scripting \& Automation:} Bash, Python, Groovy, PowerShell, Infrastructure Automation, Deployment Scripts, Configuration Management
+    \item \textbf{Databases \& Data Platforms:} PostgreSQL, Elasticsearch, Spark, Hadoop, Airflow, Database Optimization, Data Pipeline Management
+    \item \textbf{Security \& Compliance:} Information Security Principles, Container Security, Secrets Management, Access Control, Compliance Automation
+    \item \textbf{Linux Administration:} System Administration, Performance Tuning, Security Hardening, Package Management, Service Management
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{DevOps Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Designed and implemented \textbf{Kubernetes-based infrastructure} for Etisalat Payment Gateway, deploying \textbf{Docker containers} and managing \textbf{microservices architecture}, improving system scalability and reducing deployment time by 60\%.
+    \item Built comprehensive \textbf{CI/CD pipelines} using \textbf{Jenkins} and \textbf{Azure DevOps}, implementing automated testing, security scanning, and deployment strategies, reducing manual deployment errors by 90\%.
+    \item Implemented \textbf{infrastructure as code} using \textbf{Terraform} and \textbf{Ansible} for Azure cloud resources, enabling consistent environment provisioning and reducing infrastructure setup time by 70\%.
+    \item Established \textbf{monitoring and observability} stack with \textbf{Prometheus}, \textbf{Grafana}, and \textbf{Alertmanager}, achieving 99.9\% uptime and reducing incident response time by 50\%.
+    \item Automated \textbf{secrets management} and \textbf{security compliance} using \textbf{Azure Key Vault} and container security best practices, strengthening payment security and reducing compliance gaps by 40\%.
+    \item Optimized \textbf{database performance} and implemented automated backup routines using \textbf{PostgreSQL} and \textbf{Azure Functions}, improving data reliability and recovery time by 30\%.
+    \item Developed \textbf{Python and Bash scripts} for infrastructure automation, deployment orchestration, and system maintenance, reducing operational toil by 45\%.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Senior DevOps Engineer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Architected and deployed \textbf{multi-tenant SaaS infrastructure} using \textbf{Kubernetes} and \textbf{Azure cloud services}, implementing \textbf{microservices architecture} with \textbf{Istio service mesh}, reducing infrastructure costs by 25\% and improving system resilience.
+    \item Implemented \textbf{GitOps workflows} using \textbf{ArgoCD} for automated application deployment, enabling continuous delivery and reducing deployment failures by 80\%.
+    \item Built \textbf{infrastructure automation} using \textbf{Terraform} and \textbf{Ansible} for multi-cloud environments (Azure, AWS), ensuring consistent infrastructure provisioning across development, staging, and production environments.
+    \item Established \textbf{comprehensive monitoring} with \textbf{Prometheus}, \textbf{Grafana}, and \textbf{Fluentd} for log aggregation, providing real-time insights into system performance and reducing mean time to resolution by 60\%.
+    \item Automated \textbf{software build and release engineering} processes, implementing automated testing, code quality checks, and security scanning in CI/CD pipelines, improving code quality and reducing release cycle time by 40\%.
+    \item Mentored junior engineers on \textbf{DevOps best practices}, \textbf{containerization}, and \textbf{infrastructure automation}, fostering a culture of continuous learning and improvement.
+    \item Implemented \textbf{hybrid deployment strategies} using \textbf{Azure App Services} and \textbf{Kubernetes}, providing flexible hosting options and reducing infrastructure complexity for clients with legacy systems.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{DevOps Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Implemented \textbf{containerized deployment} for EKPCMS using \textbf{Docker} and \textbf{Kubernetes}, modernizing legacy systems and improving deployment consistency by 50\%.
+    \item Built \textbf{automated deployment pipelines} using \textbf{Jenkins} and \textbf{GitHub Actions}, implementing blue-green deployment strategies and reducing deployment downtime by 70\%.
+    \item Established \textbf{infrastructure monitoring} and \textbf{log aggregation} using \textbf{Fluentd} and \textbf{Prometheus}, improving system observability and reducing incident detection time by 45\%.
+    \item Automated \textbf{infrastructure provisioning} using \textbf{Ansible} and \textbf{Terraform}, ensuring consistent environment setup and reducing manual configuration errors by 60\%.
+    \item Implemented \textbf{security best practices} for containerized applications, including image scanning, secrets management, and access control, strengthening system security posture.
+\end{resume_list}
+
+\headingBf{Kahoo Digitals}{May 2020 -- Jun 2021}
+\headingIt{Junior DevOps Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Built and optimized \textbf{CI/CD pipelines} using \textbf{Jenkins}, improving deployment automation and reducing manual intervention by 40\%.
+    \item Implemented \textbf{infrastructure monitoring} and \textbf{performance optimization}, reducing system response times by 20\% and improving overall system reliability.
+    \item Developed \textbf{automation scripts} using \textbf{Bash} and \textbf{Python} for system maintenance and deployment tasks, reducing operational overhead by 30\%.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{Cloud-Native Payment Platform (Kubernetes, Docker, Azure, Terraform):} Designed and implemented a scalable, secure payment processing platform using Kubernetes orchestration, Docker containerization, and Azure cloud services. Implemented infrastructure as code with Terraform, automated CI/CD pipelines with Jenkins, and established comprehensive monitoring with Prometheus and Grafana. Achieved 99.9\% uptime and reduced deployment time by 70\%.
+    \item \textbf{Multi-Tenant SaaS Infrastructure (Kubernetes, Istio, ArgoCD, Prometheus):} Architected and deployed a multi-tenant SaaS platform infrastructure using Kubernetes with Istio service mesh for traffic management. Implemented GitOps workflows with ArgoCD for automated deployment, established monitoring with Prometheus and Grafana, and automated infrastructure provisioning with Terraform. Reduced infrastructure costs by 25\% and improved system resilience.
+    \item \textbf{Legacy System Modernization (Docker, Jenkins, Ansible):} Led the containerization and modernization of legacy EKPCMS system using Docker and Kubernetes. Implemented automated deployment pipelines with Jenkins, infrastructure automation with Ansible, and established monitoring with Fluentd and Prometheus. Improved deployment consistency by 50\% and reduced operational overhead by 45\%.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+    \item Microsoft Azure Fundamentals (AZ-900), 2024
+    \item Kubernetes Administrator (CKA), 2024
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
