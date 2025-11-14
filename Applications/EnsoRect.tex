@@ -1,0 +1,206 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Software Engineer | Full-Stack .NET Developer}
+\end{center}
+
+Software Engineer with 4+ years of experience designing and building modern, scalable web applications from the ground up. Skilled in .NET Core, C\#, React, TypeScript, RESTful APIs, and cloud technologies including Azure and AWS. Experienced in containerized deployments, CI/CD pipelines, and building high-performance applications in agile environments. Passionate about greenfield projects and collaborating with cross-functional teams to deliver cutting-edge solutions.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{Programming \& Frameworks:} C\#, .NET Core, .NET 8, React, TypeScript, JavaScript, Angular 16, RESTful APIs, GraphQL, Microservices, Entity Framework 8, ASP.NET MVC, Clean Architecture, WebAPI, SOLID Principles, LINQ
+    \item \textbf{Cloud \& DevOps:} Microsoft Azure (Functions, Service Bus, App Services, Key Vault, Blob Storage, Redis Cache), AWS (EC2, Lambda), Azure DevOps, CI/CD Pipelines, Docker, Kubernetes, Containerization, Infrastructure-as-Code
+    \item \textbf{Databases:} SQL Server, PostgreSQL, MySQL, Oracle, MongoDB
+    \item \textbf{Tools \& Technologies:} Git, Bitbucket, Swagger, Postman, RabbitMQ, Power BI
+    \item \textbf{Testing \& Quality:} Unit Testing, Integration Testing, Selenium, SoapUI, JWT, Automated Testing
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Designed and developed scalable payment gateway modules using \textbf{.NET Core} and \textbf{C\#}, building optimized \textbf{RESTful APIs} and implementing containerized deployments with \textbf{Docker} to ensure high-performance and reliability for Gulf merchants.
+    \item Built and optimized \textbf{RESTful APIs} for WalletRegistration and WalletCreateSession, merging redundant flows and implementing efficient data exchange patterns, improving transaction success rates by 90\% through comprehensive testing and \textbf{CI/CD pipelines} with \textbf{Azure DevOps}.
+    \item Collaborated with product managers and engineers to design modern, responsive user interfaces using \textbf{Angular} and \textbf{TypeScript}, delivering merchant payment pages with enhanced user experience and 35\% increase in user adoption.
+    \item Set up and managed \textbf{CI/CD pipelines} for automated testing and deployment, implementing robust cloud infrastructure on \textbf{Azure} with containerized services, improving deployment reliability by 20\%.
+    \item Enhanced API performance through query optimization and architectural improvements, applying clean code practices and \textbf{SOLID principles} to ensure maintainable, scalable solutions.
+    \item Worked in an agile environment, collaborating closely with cross-functional teams to deliver high-impact features including EMV® 3-D Secure 2.0, Apple Pay, and Samsung Pay integrations, increasing payment approval rates by 20\%.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Architected and developed a modern, scalable multi-tenant SaaS ERP from the ground up for US Auto Dealers, building a greenfield application using \textbf{.NET Core microservices}, optimized \textbf{RESTful APIs}, and \textbf{React} with \textbf{TypeScript} for a high-performance, responsive user interface.
+    \item Designed and built scalable web application modules (Accounting, Inventory, HR, Invoicing, Smart Reporting) using \textbf{.NET Core}, \textbf{React}, and \textbf{SQL Server}, collaborating with designers and product managers to shape technical solutions, streamlining operations and improving reliability by 30\%.
+    \item Built and optimized \textbf{RESTful APIs} for microservices communication, implementing efficient data exchange patterns and ensuring smooth integration between services, reducing authorization errors by 80\%.
+    \item Set up \textbf{CI/CD pipelines} and managed containerized deployments using \textbf{Docker} and \textbf{Kubernetes}, implementing robust cloud infrastructure on \textbf{Azure} with infrastructure-as-code practices, lowering infrastructure costs by 25\%.
+    \item Wrote clean, maintainable code following best practices and \textbf{SOLID principles}, ensuring quality through comprehensive \textbf{unit and integration testing}, improving system reliability and reducing bugs by 40\%.
+    \item Collaborated closely with designers, product managers, and fellow engineers in an agile environment to make key architectural decisions, delivering high-impact features that improved operational efficiency by 30\%.
+    \item Implemented responsive, high-performance user interfaces using \textbf{React} and modern JavaScript frameworks, creating intuitive dashboards and workflows that enhanced user adoption and client satisfaction.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Developed and optimized \textbf{RESTful APIs} and web services using \textbf{C\#} and \textbf{.NET Core}, building scalable solutions for banking systems that improved response accuracy by 25\% and enhanced system reliability.
+    \item Built efficient data exchange patterns and API integrations, collaborating with cross-functional teams to deliver solutions that improved customer service efficiency by 30\%.
+    \item Applied strong problem-solving skills to optimize system performance, implementing query optimizations and architectural improvements that cut data retrieval time by 25\%.
+    \item Ensured code quality through comprehensive \textbf{unit and integration testing}, following best practices and clean code principles to minimize deployment defects.
+\end{resume_list}
+
+\headingBf{Kahoo Digitals}{May 2020 -- Jun 2021}
+\headingIt{Associate Software Engineer \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Built and optimized \textbf{RESTful APIs} using \textbf{.NET Core} and \textbf{C\#}, implementing efficient data exchange patterns and improving response times by up to 20\% through query optimization and architectural improvements.
+    \item Ensured code quality through \textbf{unit testing} and comprehensive API validation, following best practices and clean code principles to increase bug detection rates by 40\%.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{MyNewsDigest (React, TypeScript, Flask, Python, MySQL, BART, NLP):} Developed a modern, scalable web application from the ground up using \textbf{React} and \textbf{TypeScript} for a responsive, high-performance user interface. Built optimized \textbf{RESTful APIs} with Flask and designed a scalable pipeline that performs topic modeling and generates summaries with BART, demonstrating strong problem-solving skills and clean code practices.
+    \item \textbf{DeRouze Saad ERP for US Auto Dealers (.NET Core, React, TypeScript, SQL Server, Azure, Docker):} Architected and deployed a greenfield multi-tenant SaaS ERP platform using \textbf{.NET Core microservices}, \textbf{React} with \textbf{TypeScript}, and containerized deployments with \textbf{Docker}. Built scalable web application modules with optimized \textbf{RESTful APIs}, reducing errors by 80\% and improving operational efficiency by 30\% through modern, maintainable code.
+    \item \textbf{EKPCMS for HBL Bank (.NET Core, C\#, RESTful APIs):} Led development of scalable banking system using \textbf{.NET Core} and \textbf{C\#}, building optimized \textbf{RESTful APIs} and implementing efficient data exchange patterns. Collaborated with cross-functional teams to deliver solutions that enhanced response efficiency and system reliability.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
