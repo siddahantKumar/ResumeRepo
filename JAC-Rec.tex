@@ -1,0 +1,201 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[draft]{hyperref} % draft mode: keeps formatting, no active content
+\usepackage{fancyhdr}
+\usepackage{multicol}
+% \usepackage{bookmark} % Removed to avoid active content in PDF
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{C\# .NET Developer | Software Engineer}
+\end{center}
+
+C\# .NET Developer with 4 years of experience developing and supporting \textbf{BI and business-critical applications} for banking and financial services on the MS .NET platform. Proven track record designing applications from business requirements, performing business data analysis, and delivering solutions using \textbf{Visual C\#.NET} with \textbf{Oracle} and \textbf{SQL Server}. Experienced in \textbf{Unit testing}, \textbf{QA}, implementation, \textbf{Production} and \textbf{Disaster Recovery} environment support, change management procedures, and technical documentation. Strong in \textbf{T-SQL} and \textbf{PL/SQL} scripting for data analysis, troubleshooting system failures with code fixes and SQL scripting, and liaising with DBAs and support teams across distributed offices. Based in England, UK; available for London and EMEA roles; comfortable with occasional out-of-hours support.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{C\# \& .NET:} Visual C\#.NET, C\#, .NET Framework, .NET Core, .NET 8, MS .NET platform, ASP.NET MVC, ASP.NET Core Web API, Minimal APIs, Entity Framework Core, Dapper, ADO.NET, LINQ, WCF, SOLID Principles, Clean Architecture
+    \item \textbf{Databases \& Data Analysis:} SQL Server, Oracle, T-SQL, PL/SQL, Azure SQL Database, stored procedures, query tuning, hash indexing, business data analysis, defining database objects, scripting for database enquiry
+    \item \textbf{Development \& Support:} Business requirements analysis, application design, Unit testing, Quality Assurance (QA), implementation, Production support, Disaster Recovery, change management, release coordination, technical documentation, troubleshooting (code fix, SQL scripting), Web and Windows applications
+    \item \textbf{Cloud \& DevOps:} Microsoft Azure (App Services, Functions, SQL Database, Key Vault, Logic Apps), Azure DevOps, CI/CD pipelines
+    \item \textbf{Tools \& BI:} Power BI, Visual Studio, Git, Bitbucket, Swagger, SoapUI, Postman, SOAP/REST, WSDL
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Asaan AI}{Nov 2024 -- Present}
+\headingIt{Software Engineer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Develop and support SaaS backend using \textbf{C\#}, \textbf{.NET 8}, and \textbf{ASP.NET Core} with \textbf{Entity Framework Core} and \textbf{Dapper} for \textbf{SQL Server} and multi-tenant data; follow change and release practices for production deployments.
+    \item Build \textbf{Power Apps} and \textbf{.NET Core} REST APIs for business applications; create technical documentation and support production environments.
+    \item Implement \textbf{Unit testing} and API versioning; troubleshoot failures with code fixes and data access tuning (\textbf{T-SQL}), improving reliability for 1000+ daily users.
+    \item Design admin portals and workflow automation with \textbf{Power Apps}, \textbf{Dynamics 365}, and \textbf{Azure Logic Apps}; liaise with internal teams for configuration and support.
+\end{resume_list}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Developed and supported \textbf{payment gateway} applications for Gulf banking/merchant services using \textbf{C\#} and \textbf{.NET Web APIs}; implemented transaction validation and encryption with \textbf{Azure Key Vault}, reducing processing errors by 40\%.
+    \item Performed \textbf{business data analysis} and delivered \textbf{T-SQL} and \textbf{stored procedure} optimizations on \textbf{Oracle} and \textbf{SQL Server}; streamlined database operations and automated backup routines with \textbf{Azure Functions}, improving deployment reliability by 20\%.
+    \item Conducted \textbf{Unit testing} and \textbf{QA} with \textbf{Azure DevOps} pipelines (VISA, MasterCard, AMEX test scenarios), improving transaction success rates by 90\%; delivered production fixes for merchant pages using \textbf{.NET Core} and \textbf{Angular}.
+    \item Integrated EMV® 3-D Secure 2.0 and digital wallets; collaborated with support and infrastructure teams for implementation and troubleshooting.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Designed and implemented multi-tenant \textbf{business applications} (ERP) from business requirements using \textbf{.NET Core}, \textbf{C\#}, and \textbf{SQL Server}; delivered modules for Accounting, Inventory, HR, Invoicing, and \textbf{Smart Reporting} with \textbf{Power BI} dashboards.
+    \item Wrote \textbf{T-SQL} scripts and \textbf{stored procedures} for reporting and data analysis; supported \textbf{Production} deployments and hybrid hosting (Azure App Services, on-premises \textbf{Kestrel}), reducing infrastructure costs by 25\%.
+    \item Enforced \textbf{change management} and role-based approval workflows via \textbf{Azure B2C}; reduced compliance gaps and approval delays by 35\%; prepared documentation for deployments.
+    \item Implemented inter-service communication with \textbf{RabbitMQ}; performed troubleshooting and code fixes across Web and backend services.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Developed and supported \textbf{banking} applications (EKPCMS) for \textbf{HBL} using \textbf{C\#} web services, \textbf{WSDL}, and \textbf{SOAP}; translated business requirements into complaint workflows synchronized with CRM, improving response accuracy by 25\%.
+    \item Delivered \textbf{VISA} mandate integration with bank host and card management systems; provided \textbf{PL/SQL} and \textbf{T-SQL} scripting for data analysis and system synchronization; used \textbf{SoapUI} for \textbf{QA} and validation.
+    \item Optimized \textbf{Oracle}/\textbf{SQL Server} query performance with hash indexing, cutting data retrieval time by 25\%; liaised with middleware and support teams for production rollouts and troubleshooting.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{DeRouze Saad ERP (.NET Core, C\#, SQL Server, Power BI):} Architected multi-tenant business application with Accounting, Inventory, HR, Invoicing, and reporting modules. Delivered T-SQL scripts and stored procedures for data analysis; supported Production and change management; improved operational efficiency by 30\%.
+    \item \textbf{EKPCMS for HBL Bank (C\#, .NET, WSDL, SOAP, Oracle/SQL Server):} Developed and supported banking complaint workflows; SOAP-based integration with CRM; PL/SQL/T-SQL for data analysis; SoapUI for QA; liaised with support teams for production deployments.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
