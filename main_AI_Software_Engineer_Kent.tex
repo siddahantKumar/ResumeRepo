@@ -1,0 +1,212 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[draft]{hyperref} % draft mode: keeps formatting, no active content
+\usepackage{fancyhdr}
+\usepackage{multicol}
+% \usepackage{bookmark} % Removed to avoid active content in PDF
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{AI Software Engineer}
+\end{center}
+
+Software engineer with 4 years of experience \textbf{developing, testing and maintaining AI-enabled applications} that support \textbf{learning}, \textbf{teaching}, \textbf{student experience} and \textbf{professional-services delivery}. Experienced \textbf{building and supporting AI chatbots and assistants} using \textbf{large language model (LLM) APIs}, with \textbf{prompt design}, \textbf{request/response handling} and \textbf{basic error management} to ensure \textbf{safe}, \textbf{accurate} and aligned outputs (Azure OpenAI Service, Generative AI APIs). Strong in modern \textbf{backend} languages (\textbf{C\#}, \textbf{Python}) and \textbf{backend services}, \textbf{APIs} and scripts that \textbf{integrate AI tools with systems and content repositories}, following agreed integration patterns. Contributes to \textbf{user-facing tools} with \textbf{usability} and \textbf{accessibility} considerations; works with academic and professional-services colleagues to understand requirements, contribute to solution design, and implement agreed functionality.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{Backend \& APIs:} \textbf{C\#}, \textbf{Python}, .NET Core, .NET 8, ASP.NET Core Web API, Flask; \textbf{backend services}, \textbf{RESTful APIs}, integration with systems and content repositories
+    \item \textbf{AI \& LLM integration:} \textbf{Large language model} (\textbf{LLM}) integration via \textbf{APIs}; \textbf{Azure OpenAI Service}, Generative AI APIs; \textbf{prompt design}, \textbf{request/response handling}, \textbf{error management}; chatbots and assistants
+    \item \textbf{User-facing \& quality:} User-facing tools and services; \textbf{usability} and \textbf{accessibility} considerations; testing and maintaining AI-enabled applications
+    \item \textbf{Data \& integration:} SQL Server, Azure SQL, Entity Framework Core, Dapper; content pipelines and \textbf{content repositories}; \textbf{agreed integration patterns}
+    \item \textbf{Tools:} Git, Azure DevOps, Swagger, Postman; collaboration with academic and professional-services stakeholders
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Asaan AI}{Nov 2024 -- Present}
+\headingIt{Software Engineer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Develop, test and maintain \textbf{AI-enabled applications} for \textbf{learning} and user experience: Scholarbot AI homework application (backend in \textbf{C\#}, .NET 8) and Booksquare GPT for intelligent document processing.
+    \item Build and support \textbf{AI chatbots and assistants} using \textbf{LLM APIs}: integrate \textbf{Azure OpenAI Service} with \textbf{.NET Core}; \textbf{prompt design}, \textbf{request/response handling} and \textbf{basic error management} for \textbf{safe}, \textbf{accurate} outputs; supporting 1000+ daily users.
+    \item Build \textbf{backend services} and \textbf{APIs} that integrate AI tools with product systems and content; Azure Functions for processing pipelines; following agreed integration patterns.
+    \item Design and build user-facing tools (Power Apps, Dynamics 365) for course creators and staff; \textbf{usability} and \textbf{accessibility} considerations; collaborate with colleagues to understand requirements and implement agreed functionality.
+    \item Develop RESTful APIs (ASP.NET Core Web API, Dapper) for high-performance data access; contribute to solution design and refinement of AI applications.
+    \item Implement workflow automation (Power Automate, Azure Logic Apps) for document processing and notifications across SaaS products.
+\end{resume_list}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Developed \textbf{backend} services in \textbf{C\#} for payment gateway; secure integration patterns; reduced processing errors by 40\%.
+    \item Built and optimized \textbf{APIs} (WalletRegistration, WalletCreateSession) using .NET Web APIs; \textbf{request/response handling} and \textbf{error management}.
+    \item Improved transaction success rates by 90\% through scenario-based \textbf{testing} and automated regression (Azure DevOps); contributed to solution design with cross-functional teams.
+    \item Integrated EMV® 3-D Secure 2.0 and digital wallets; increased payment approval rates by 20\% and user adoption by 35\%.
+    \item Streamlined database operations with \textbf{stored procedures} and Azure Functions; improved deployment reliability by 20\%.
+    \item Enhanced \textbf{API} performance through EF Core tuning and Dapper; delivered fixes for \textbf{user-facing} merchant pages using .NET Core and Angular (\textbf{usability} focus).
+    \item Delivered fixes for merchant payment pages (refund handling, BNPL validation, localized pages); collaborated with support and technical teams on agreed functionality.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Integrated \textbf{Generative AI} \textbf{APIs} to automate invoice creation; \textbf{LLM} integration with \textbf{prompt design} and \textbf{request/response handling}; improved billing accuracy by 20\%.
+    \item Architected and deployed multi-tenant SaaS for \textbf{learning} and \textbf{professional-services delivery} using \textbf{C\#}, .NET Core and SQL Server; \textbf{backend services} and \textbf{APIs} integrating with client systems and content; reduced errors by 80\%, reliability by 30\%.
+    \item Delivered ERP modules (Accounting, Inventory, HR, Invoicing, Smart Reporting) with Angular and SQL Server; \textbf{user-facing} tools with \textbf{usability} and \textbf{accessibility} focus; collaborated with stakeholders on requirements, solution design and agreed functionality.
+    \item Implemented inter-service communication (RabbitMQ, Mass Transit); hybrid deployment (Azure App Services, Kestrel); lowered infrastructure costs by 25\%.
+    \item Automated reporting with Power BI dashboards; supported \textbf{professional-services} and client visibility.
+    \item Designed role-based approval workflows (Azure B2C); reduced compliance gaps and approval delays by 35\%.
+    \item Delivered Elite 3E customizations for Helm360 and WithersWorldWide workflows; worked with non-technical colleagues to understand needs and implement agreed functionality.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Developed \textbf{backend} web services in \textbf{C\#} (WSDLs) for banking applications; integrated with CRM and middleware; improved response accuracy by 25\%.
+    \item Delivered VISA mandate integration; \textbf{API} and \textbf{request/response handling}; \textbf{error management} for production reliability.
+    \item Expanded backend with 16 complaint types using SOAP-based architecture; \textbf{testing} and validation (SoapUI); contributed to solution design with support teams; improved customer service efficiency by 30\%.
+    \item Used SoapUI to test and validate web services; minimized deployment defects; collaborated on agreed integration patterns.
+    \item Optimized query performance (hash indexing), cutting data retrieval time by 25\%; maintained integration with content and systems.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: \textbf{AI-Based Summarization Tool} for Political Tweets; \textbf{NLP} and language-model pipelines (BART, TF-IDF, LDA); relevance to learning and content delivery.
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{MyNewsDigest (\textbf{Python}, \textbf{Flask}, React, MySQL, BART, NLP):} Developed \textbf{AI-enabled} summarization tool for political tweets; \textbf{backend} pipeline and \textbf{APIs} in \textbf{Python}; integration of summarization models (BART); \textbf{user-facing} React frontend with \textbf{accessibility} and \textbf{usability} focus for trending insights.
+    \item \textbf{Booksquare GPT / Scholarbot (C\#, .NET, \textbf{Azure OpenAI}):} \textbf{LLM} integration via \textbf{APIs}; \textbf{prompt design} and \textbf{request/response handling} for document processing and learning support; \textbf{backend services} and Azure Functions; safe, accurate outputs aligned to product needs.
+    \item \textbf{DeRouze Saad ERP (C\#, .NET Core, \textbf{Generative AI}):} Integrated \textbf{Generative AI} \textbf{APIs} for invoice creation; \textbf{backend} and \textbf{API} design; reduced errors by 80\%, operational efficiency by 30\%.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
