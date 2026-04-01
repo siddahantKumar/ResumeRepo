@@ -1,0 +1,203 @@
+\documentclass[letterpaper,10pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[draft]{hyperref} % draft mode: keeps formatting, no active content
+\usepackage{fancyhdr}
+\usepackage{multicol}
+% \usepackage{bookmark} % Removed to avoid active content in PDF
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    \vspace*{-0.3in}
+    {\Huge\color{accentTitle} #1}
+    \vspace{8pt}
+    {\color{accentLine} \hrule}
+    \vspace{2pt}
+    \footnotesize{#2}
+    \vspace{2pt}
+    {\color{accentLine} \hrule}
+  \end{center}
+}
+
+\titleformat{\section}{
+  \vspace{-5pt}
+  \color{accentText}
+  \raggedright\large\bfseries
+}{}{0em}{}[\color{accentLine}\titlerule]
+
+\newcommand{\headingBf}[2]{
+  \hspace{10pt}\textbf{#1}\hfill\textbf{#2}\\
+}
+
+\newcommand{\headingIt}[2]{
+  \hspace{10pt}\textit{#1}\hfill\textit{#2}\\
+}
+
+\newenvironment{resume_list}{
+  \vspace{-7pt}
+  \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=30pt]
+}{
+  \end{itemize}
+}
+
+%\renewcommand\labelitemi{--}
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[
+    top=0.7in,
+    bottom=0.7in,
+    left=0.61in,
+    right=0.61in
+]{geometry}
+
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.4in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.6in}
+
+\begin{document}
+
+%---------%
+% Heading %
+%---------%
+\documentTitle{Siddahant Kumar}{
+\vspace{0.1cm}
+\href{mailto:sidhantlohana@outlook.com}{sidhantlohana@outlook.com} ~ | ~
+\href{tel:+447827848363}{+44 7827 848363} ~ | ~
+\href{https://www.linkedin.com/in/siddahantkumar/}{linkedin.com/in/siddahantkumar} ~ | ~
+\href{https://github.com/siddahantKumar}{github.com/siddahantKumar} ~ | ~
+England, UK
+}
+
+\begin{center}
+\textbf{Full-Stack .NET Developer | Software Engineer}
+\end{center}
+
+Full-Stack .NET Developer with 4 years of experience designing and building high-performance web applications, SaaS ERP platforms, and payment solutions. Skilled in \textbf{.NET 8} Web APIs, \textbf{ASP.NET Core} (dependency injection, routing, middleware, controllers, API versioning), C\#, \textbf{SQL Server} and \textbf{MongoDB}, async/concurrency patterns, and cloud technologies including Azure and DevOps CI/CD pipelines. Experienced in integrating complex financial systems, automating business workflows, and leveraging AI/Generative AI for enhanced decision-making and operational efficiency. Passionate about combining software engineering with innovative automation to solve real-world business challenges.
+
+
+%------------%
+% Skills %
+%------------%
+\section{Core Skills}
+
+\begin{resume_list}
+    \item \textbf{Programming \& Frameworks:} \textbf{.NET 8}, C\#, ASP.NET Core Web API, ASP.NET Core Minimal APIs, dependency injection, routing, controllers, middleware patterns, \textbf{API versioning}, async/await, TPL \& concurrency, RESTful APIs, \textbf{distributed systems}, \textbf{microservices}, Entity Framework Core, Dapper, ADO.NET, Clean Architecture, LINQ, SOLID principles
+    \item \textbf{Cloud \& DevOps:} Microsoft \textbf{Azure} (Functions, Service Bus, App Services, Key Vault, Redis Cache, Logic Apps, SQL Database, AD B2C), \textbf{Azure DevOps}, \textbf{CI/CD} pipelines, monitoring-oriented delivery
+    \item \textbf{Databases:} \textbf{SQL Server} (T-SQL), Azure SQL Database, Oracle, MySQL, PostgreSQL, \textbf{MongoDB} (driver usage, connection management, performance tuning)
+    \item \textbf{Tools \& Technologies:} Git, Bitbucket, Swagger/OpenAPI, Postman, SOAP/REST, \textbf{RabbitMQ} (\textbf{message queues}), MassTransit, \textbf{event-driven} integration, background job queues, JWT, \textbf{secure API design}, secure credential handling
+    \item \textbf{Testing \& Automation:} \textbf{unit testing} practices, regression testing, Selenium, SoapUI, automated workflows, CI/CD-enabled quality gates
+\end{resume_list}
+
+%------------%
+% Experience %
+%------------%
+\section{Professional Experience}
+
+\headingBf{Asaan AI}{Nov 2024 -- Present}
+\headingIt{Software Engineer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Architect and develop SaaS backend for Scholarbot using \textbf{.NET 8} and \textbf{ASP.NET Core Minimal APIs}, leveraging \textbf{dependency injection} and endpoint routing to deliver scalable multi-tenant \textbf{Web APIs} with \textbf{API versioning}, backed by \textbf{Entity Framework Core} code-first migrations.
+    \item Develop high-performance \textbf{ASP.NET Core} Web APIs using \textbf{ASP.NET Core Web API} and \textbf{Dapper} for efficient data access, implementing authentication with \textbf{Azure AD B2C} and applying \textbf{API versioning} across endpoints.
+    \item Build asynchronous workflow automation using \textbf{Azure Logic Apps} to orchestrate document-processing pipelines, improving reliability and maintainability of integration flows.
+    \item Integrate \textbf{Azure OpenAI Service} with \textbf{.NET Core} services for intelligent document processing in Booksquare GPT, processing files through \textbf{Azure Functions} background job queues, supporting \textbf{1000+} daily active users.
+\end{resume_list}
+
+\headingBf{Systems Limited}{Oct 2023 -- Oct 2024}
+\headingIt{.NET Consultant \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Implement secure transaction validation and encryption modules in the SOA-based Etisalat Payment Gateway using \textbf{C\#} and \textbf{Azure Key Vault}, strengthening secure data handling for \textbf{API workflows} and reducing processing errors by \textbf{40\%} for Gulf merchants.
+    \item Improve transaction success rates by \textbf{90\%} through scenario-based testing (VISA/MasterCard/AMEX) and automated regression testing with \textbf{Azure DevOps} pipelines, supporting reliable delivery.
+    \item Create and optimize high-throughput \textbf{.NET Web APIs} for WalletRegistration and WalletCreateSession by consolidating redundant flows and applying workflow orchestration patterns for resilient, async background processing.
+    \item Streamline database performance by tuning queries and implementing automated backup routines with \textbf{Azure Functions} and \textbf{stored procedures}, improving deployment reliability by \textbf{20\%}.
+    \item Enhance API performance with \textbf{EF Core} query tuning and selective \textbf{Dapper} usage, reducing response times through targeted data-access optimizations.
+\end{resume_list}
+
+\headingBf{One Technology Services}{Jun 2022 -- Oct 2023}
+\headingIt{Full-Stack .NET Developer \hfill Remote, USA}{}
+\begin{resume_list}
+    \item Architect and deploy a multi-tenant SaaS ERP using \textbf{.NET Core microservices}, \textbf{Swagger/OpenAPI}, and \textbf{Azure AD B2C authentication}, reducing authorization errors by \textbf{80\%} and improving uptime.
+    \item Deliver ERP modules (Accounting, Inventory, HR, Invoicing, Smart Reporting) backed by \textbf{SQL Server}, improving reliability by \textbf{30\%} through streamlined data-access and integration.
+    \item Implement distributed, event-driven communication by integrating \textbf{RabbitMQ} with \textbf{MassTransit}, enabling asynchronous message processing to support scalable \textbf{microservices}.
+    \item Design role-based approval workflows for multi-tenant deployments using \textbf{Azure AD B2C} role management, reducing compliance gaps and cutting approval delays by \textbf{35\%}.
+\end{resume_list}
+
+\headingBf{Avanza Solutions}{Jun 2021 -- Jun 2022}
+\headingIt{Software Engineer \hfill Remote, UAE}{}
+\begin{resume_list}
+    \item Revamp EKPCMS workflows by exposing interoperable \textbf{C\# web services} with \textbf{WSDL} to Unison CRM, improving response accuracy by \textbf{25\%} through reliable system synchronization.
+    \item Use \textbf{SoapUI} to test and validate service integrations, minimizing deployment defects and improving delivery confidence.
+    \item Optimize data access with hash indexing on Unison-Attributes, cutting data retrieval time by \textbf{25\%} and improving system efficiency.
+\end{resume_list}
+
+%-----------%
+% Education %
+%-----------%
+\section{Education}
+
+\headingBf{Bangor University}{Jan 2024 -- Jan 2025}
+\headingIt{MSc in Advanced Computer Science (Distinction) \hfill Bangor, UK}{}
+\begin{resume_list}
+    \item Dissertation: AI-Based Summarization Tool for Political Tweets
+\end{resume_list}
+
+\headingBf{FAST-NU}{Aug 2017 -- Jun 2021}
+\headingIt{BS in Computer Science (Merit) \hfill Karachi, Pakistan}{}
+\begin{resume_list}
+    \item Project: TourzHub -- Personalized Travel Package Platform
+\end{resume_list}
+
+%------------%
+% Projects   %
+%------------%
+\section{Projects}
+\begin{itemize}
+    \setlength\itemsep{3pt}
+    \item \textbf{MyNewsDigest (React, Flask, Python, MySQL, BART, NLP):} Developed a novel system for summarizing political tweets using modern NLP techniques. Designed a scalable and efficient pipeline that collects, cleans, and preprocesses Twitter data, performs topic modeling with TF-IDF and LDA, and generates summaries with BART. Improved accessibility of trending political insights through a user-friendly React frontend.
+    \item \textbf{DeRouze Saad ERP for US Auto Dealers (.NET Core, SQL Server, Azure): } Architected and deployed a multi-tenant SaaS ERP platform with modules for Accounting, Inventory, HR, Invoicing, and Smart Reporting, backed by \textbf{.NET Core microservices} and \textbf{SQL Server}. Built API-driven integrations with \textbf{OpenAPI/Swagger}, reducing authorization errors by 80\% and improving operational efficiency by 30\%.
+    \item \textbf{EKPCMS for HBL Bank (C++, C\#, .NET, WSDL, SOAP UI):} Led a two-phase revamp of EKPCMS, migrating to SOAP-based XML communications via Financial Middleware (Rendezvous) between SBP and HBL CRM. Implemented 24 complaint handling workflows synchronized across multiple channels, enhancing response efficiency and system reliability.
+\end{itemize}
+
+%------------%
+% Certifications %
+%------------%
+\section{Certifications}
+\begin{itemize}
+    \item Google Project Management Professional, 2024
+    \item Generative AI Mastermind, 2025
+\end{itemize}
+
+\vspace*{\fill}
+\end{document}
